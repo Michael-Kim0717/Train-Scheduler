@@ -1,0 +1,36 @@
+/* Header */
+
+#header {
+    background-color: #8AF3F3;
+    border-bottom: 1px solid black;
+}
+
+#header-img {
+    float: left;
+    margin-right: 30px;
+    width: 150px;
+}
+
+#title {
+    padding: 30px;
+}
+
+/* Train Schedule */
+
+.card {
+    margin: 20px;
+}
+
+table {
+    margin: 20px;
+}
+
+/* Add Train Form */
+
+form {
+    margin: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}
