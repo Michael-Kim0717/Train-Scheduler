@@ -17,6 +17,13 @@ $(document).ready(function(){
     });
 
     database.ref("Trains").on("child_added", function(snapshot){
+        var trainTime = moment(snapshot.val().time, "HH:mm").subtract(1, 'years');
+        var timeDifference = moment().diff(moment(trainTime), "minutes");
+        var remainder = (timeDifference % snapshot.val().freq);
+        console.log(remainder);
+        if (moment(snapshot.val().time).format("HH:mm a") < moment().format("HH:mm")){
+        }
+        /* while (moment().format("HH:mm a") > moment(snapshot.val().time) */
         $("#train-names").append("<tr> <td> " + snapshot.val().name + " </td> <td>" + snapshot.val().dest + "</td> <td>" + snapshot.val().freq + "</td> </tr>")
     });
 
