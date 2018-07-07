@@ -12,20 +12,30 @@
 }
 
 #title {
+    font-family: 'Cinzel', 'Georgia', 'sans-serif';
     padding: 30px;
 }
 
 /* Train Schedule */
 
 .card {
-    margin: 20px;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+#add-btn {
+    float: right;
 }
 
 table {
-    margin: 20px;
+    padding: 30px;
 }
 
 /* Add Train Form */
+
+h5 {
+    font-family: 'Song Myung', 'Georgia', 'sans-serif';
+}
 
 form {
     margin: 20px;
@@ -33,4 +43,8 @@ form {
 
 input {
     margin-bottom: 10px;
+}
+
+#add-train {
+    float: right;
 }
